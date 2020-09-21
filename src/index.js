@@ -12,10 +12,10 @@ const route = (
     <div>
       {/* <Header head={"Photo-Gallery App"} /> */}
       <Switch>
-        <Route path="/" component={App} exact={true} />
-        <Route path="/login" component={Login} exact={true} />
-        <Route path="/image" component={ImagePageComp} exact={true} />
-        <Route path="/signup" component={SignupComp} exact={true} />
+        <Route path={process.env.PUBLIC_URL + '/'} component={App} exact={true} />
+        <Route path={process.env.PUBLIC_URL + '/login'} component={Login} exact={true} />
+        <Route path={process.env.PUBLIC_URL + '/image'} component={ImagePageComp} exact={true} />
+        <Route path={process.env.PUBLIC_URL + '/signup'} component={SignupComp} exact={true} />
       </Switch>
       <Footer />
     </div>
